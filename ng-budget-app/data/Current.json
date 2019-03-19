@@ -1,0 +1,32 @@
+{ 
+	"Current":
+	[
+		{
+			"id": 1,
+			"date": "2019-03-18",
+			"mark": 1,
+			"ammount": 10000,
+			"type": "income",
+			"comment": "зашло от Murka"
+		},
+		{
+			"id": 2,
+			"date": "2019-03-18",
+			"mark": -1,
+			"ammount": 100,
+			"type": "outcome",
+			"subtype": "001-food",
+			"comment": "продукты"
+		},
+		{
+			"id": 3,
+			"date": "2019-03-18",
+			"mark": -1,
+			"ammount": 20,
+			"type": "outcome",
+			"subtype": "030-chemistry",
+			"comment": "бытовая химия"
+		}
+	],
+	"updated": "2019-03-18T19H30M"
+}
