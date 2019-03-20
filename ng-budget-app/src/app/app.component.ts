@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BudgetListComponent } from './budget-list/budget-list.component';
 
 @Component({
   selector: 'app-root',
