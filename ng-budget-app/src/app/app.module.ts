@@ -11,7 +11,8 @@ import { BudgetListModule } from './budget-list/budget-list.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BudgetListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

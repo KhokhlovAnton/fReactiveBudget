@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { BudgetListComponent } from './budget-list/budget-list.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { BudgetListComponent } from './budget-list/budget-list.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'My Budget App';
+  title = 'My Family Budget App';
 }
