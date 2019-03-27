@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BudgetListModule } from './budget-list/budget-list.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { BudgetListModule } from './budget-list/budget-list.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BudgetListModule
+    BudgetListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
