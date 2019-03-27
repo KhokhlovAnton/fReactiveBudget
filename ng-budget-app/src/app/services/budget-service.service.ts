@@ -13,7 +13,7 @@ export class BudgetServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getData(): Observable<any> {
+  getData() {
     return this.http.get(this._jsonURL)
       /* TODO add map to parse JSON */
       .pipe(map((response:any) => response)
