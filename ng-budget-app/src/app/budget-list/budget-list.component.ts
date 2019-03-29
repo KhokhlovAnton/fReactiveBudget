@@ -11,6 +11,8 @@ import { BudgetServiceService } from '../services/budget-service.service';
 export class BudgetListComponent implements OnInit {
   private curBudget = <any>[];
   currentAccount = 0;
+  creditFunds = 32000;
+  crrencySavings = 4000;
 
   constructor(private bsServ: BudgetServiceService) { }
 

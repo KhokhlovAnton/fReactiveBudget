@@ -29,7 +29,6 @@
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  color: #ff0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 150%;
 }
@@ -44,7 +43,6 @@
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #c0c0c0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 150%;
 }
@@ -59,18 +57,34 @@
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  color: #85BB65;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 150%;
 }
 
-p {
-  font-family: Lato;
+.flex-item:nth-child(1) .example-card {
+  background: #ff0;
+}
+
+.flex-item:nth-child(2) .example-card {
+  /*background: #c0c0c0;*/
+  background: #c5c5c5;
+}
+
+.flex-item:nth-child(3) .example-card {
+  background: #85BB65;
 }
 
 .example-card {
   max-width: 300px;
-  margin: 4px
+  margin: 15px;
+  width: 400px;
+  height: 150px;
+  color: #00f;
+  background: inherit;
 }
 
+.mc-subtitle {
+  color: #00f;
+  font-size: 150%;
+}
 

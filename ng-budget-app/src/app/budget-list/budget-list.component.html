@@ -2,12 +2,28 @@
   <div class = "flex-item">
     <mat-card class="example-card">
       <mat-card-header>
-        <mat-icon>more_vert</mat-icon>
+        <!--mat-icon>more_vert</mat-icon-->
         <mat-card-title>Current account</mat-card-title>
-        <mat-card-subtitle>{{currentAccount}}</mat-card-subtitle>
+        <mat-card-subtitle class="mc-subtitle">{{currentAccount | currency:'UAH' : 'symbol-narrow'}}</mat-card-subtitle>
       </mat-card-header>
     </mat-card>
   </div>
-  <div class = "flex-item"> Credit funds </div>
-  <div class = "flex-item"> Currency savings </div>
+  <div class = "flex-item">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <!--mat-icon>more_vert</mat-icon-->
+        <mat-card-title>Credit funds</mat-card-title>
+        <mat-card-subtitle class="mc-subtitle">{{creditFunds | currency:'UAH' : 'symbol-narrow'}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <div class = "flex-item">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <!--mat-icon>more_vert</mat-icon-->
+        <mat-card-title>Currency savings</mat-card-title>
+        <mat-card-subtitle class="mc-subtitle">{{crrencySavings | currency:'USD'}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
 </div>
