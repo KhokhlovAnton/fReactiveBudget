@@ -10,6 +10,7 @@ import { BudgetServiceService } from '../services/budget-service.service';
 })
 export class BudgetListComponent implements OnInit {
   private curBudget = <any>[];
+  currentAccount = 0;
 
   constructor(private bsServ: BudgetServiceService) { }
 
@@ -19,6 +20,7 @@ export class BudgetListComponent implements OnInit {
         // console.log(data);
         this.curBudget = data.Current;
         const currentAcc = this.curBudget.reduce((acc, req) => acc + (req.ammount * req.mark), 0);
+        this.currentAccount = currentAcc;
         console.log(currentAcc);
       }
     );
